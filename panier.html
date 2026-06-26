@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panier - Aloha Confitures</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/panier.css">
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <img src="" alt="Aloha Confitures naturelles" class="logo">
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="/saveur.html">Nos saveurs</a></li>
+      <li><a href="/producteur.html">Nos producteurs</a></li>
+      <li><a href="#apropos">À propos</a></li>
+    </ul>
+    <a href="/panier.html" class="panier active">🛒<span id="panier-count">0</span></a>
+  </div>
+</nav>
+
+<section class="page-header">
+  <div class="container">
+    <h1>Votre panier</h1>
+    <p>Vérifiez vos articles avant de passer commande</p>
+  </div>
+</section>
+
+<section class="panier-container container">
+  <div class="panier-content">
+    
+    <!-- Liste des articles -->
+    <div class="panier-liste">
+      <h2>Mes articles</h2>
+      
+      <!-- Article exemple 1 -->
+      <div class="panier-item" data-id="1" data-prix="3000">
+        <img src="" alt="Confiture de Goyave">
+        <div class="item-info">
+          <h3>Confiture de Goyave</h3>
+          <p class="item-desc">Pot 250g - 100% naturel</p>
+          <span class="item-prix">3 000 FCFA</span>
+        </div>
+        <div class="item-qte">
+          <button class="qte-btn minus">-</button>
+          <span class="qte">1</span>
+          <button class="qte-btn plus">+</button>
+        </div>
+        <button class="supprimer">×</button>
+      </div>
+
+      <!-- Article exemple 2 -->
+      <div class="panier-item" data-id="2" data-prix="3000">
+        <img src="" alt="Confiture d'Ananas">
+        <div class="item-info">
+          <h3>Confiture d'Ananas</h3>
+          <p class="item-desc">Pot 250g - 100% naturel</p>
+          <span class="item-prix">3 000 FCFA</span>
+        </div>
+        <div class="item-qte">
+          <button class="qte-btn minus">-</button>
+          <span class="qte">2</span>
+          <button class="qte-btn plus">+</button>
+        </div>
+        <button class="supprimer">×</button>
+      </div>
+
+      <!-- Panier vide -->
+      <div class="panier-vide">
+        <p>Votre panier est vide</p>
+        <a href="saveurs.html" class="btn">Découvrir nos saveurs</a>
+      </div>
+    </div>
+
+    <!-- Récapitulatif + Paiement -->
+    <div class="recap">
+      <h2>Récapitulatif</h2>
+      
+      <div class="recap-ligne">
+        <span>Sous-total</span>
+        <span id="sous-total">0 FCFA</span>
+      </div>
+      
+      <div class="recap-ligne">
+        <span>Livraison Libreville</span>
+        <span>1 000 FCFA</span>
+      </div>
+      
+      <div class="recap-ligne total">
+        <span>Total</span>
+        <span id="total">0 FCFA</span>
+      </div>
+
+      <button class="btn btn-paiement" id="btn-payer">Payer maintenant</button>
+      
+      <div class="paiement-info">
+        <p>💳 Paiement sécurisé</p>
+        <div class="modes-paiement">
+          <span>Mobile Money</span>
+          <span>Carte bancaire</span>
+          <span>Espèces à la livraison</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal simulation paiement -->
+<div class="modal" id="modal-paiement">
+  <div class="modal-content">
+    <span class="close" id="close-modal">&times;</span>
+    <div class="modal-icon">✅</div>
+    <h3>Paiement simulé avec succès !</h3>
+    <p>Merci pour votre commande chez Aloha.</p>
+    <p class="modal-desc">Numéro de commande : <strong>ALH-<span id="num-commande"></span></strong></p>
+    <p class="modal-desc">Livraison prévue sous 24h à Libreville</p>
+    <button class="btn" id="btn-fermer">Retour à l'accueil</button>
+  </div>
+</div>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h4>ALOHA</h4>
+      <p>Confitures naturelles<br>Le goût authentique du Gabon</p>
+    </div>
+    <div>
+      <h4>Liens rapides</h4>
+      <a href="saveurs.html">Nos saveurs</a><br>
+      <a href="producteurs.html">Nos producteurs</a><br>
+      <a href="#apropos">À propos</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>+241 62 12 34 56<br>aloha@confitures.ga<br>Libreville, Gabon</p>
+    </div>
+  </div>
+  <div class="copy">© 2024 ALOHA - Célébrons les fruits du Gabon, célébrons le naturel.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
