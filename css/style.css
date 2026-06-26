@@ -98,7 +98,7 @@ nav .container{
 .hero{
   padding: 100px;
   height: 600px;
-  background-image: url('images/bg-img.png');
+  background-image: url('/images/bg-img.png');
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
