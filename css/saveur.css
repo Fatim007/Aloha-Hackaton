@@ -46,10 +46,13 @@ nav .container {
   align-items: center;
   justify-content: space-between;
   padding: 14px 20px;
+  height: 70px;
 }
 
-.logo {
-  height: 5rem;
+.logo{
+ height: 6rem;
+ margin-top:  70px;
+ position: absolute;
 }
 
 .nav-links {
@@ -267,7 +270,8 @@ footer {
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 35px;
+  display: flex;
+
 }
 
 footer h4 {
