@@ -1,4 +1,7 @@
 /* ===== CHARTE ALOHA ===== */
+@import url(producteur.css);
+@import url(saveur.css);
+@import url(panier.css);
 :root{
   --goyave: #A85B63;
   --creme: #F7E2C4;
